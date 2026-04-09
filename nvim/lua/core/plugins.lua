@@ -27,6 +27,9 @@ require("lazy").setup({
         -- Colorscheme
         { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
 
+        -- Claude Code integration
+        { "Cannon07/claude-preview.nvim", config = function() require("claude-preview").setup() end },
+
         -- Discoverability
         { "folke/which-key.nvim", event = "VeryLazy" },
 })
