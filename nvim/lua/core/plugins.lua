@@ -1,30 +1,30 @@
 require("lazy").setup({
-  "nvim-tree/nvim-tree.lua",
-  "nvim-tree/nvim-web-devicons",
-  "nvim-lualine/lualine.nvim",
-  "nvim-treesitter/nvim-treesitter",
-  "hrsh7th/nvim-cmp",
-  "hrsh7th/cmp-nvim-lsp",
-  "L3MON4D3/LuaSnip",
-  "saadparwaiz1/cmp_luasnip",
-  "williamboman/mason.nvim",
-  "williamboman/mason-lspconfig.nvim",
-  "neovim/nvim-lspconfig",
+        "nvim-tree/nvim-tree.lua",
+        "nvim-tree/nvim-web-devicons",
+        "nvim-lualine/lualine.nvim",
+        "nvim-treesitter/nvim-treesitter",
+        "hrsh7th/nvim-cmp",
+        "hrsh7th/cmp-nvim-lsp",
+        "L3MON4D3/LuaSnip",
+        "saadparwaiz1/cmp_luasnip",
+        "williamboman/mason.nvim",
+        "williamboman/mason-lspconfig.nvim",
+        "neovim/nvim-lspconfig",
 
-  -- Git
-  "tpope/vim-fugitive",
-  "airblade/vim-gitgutter",
-  "jreybert/vimagit",
+        -- Git
+        "tpope/vim-fugitive",
+        "airblade/vim-gitgutter",
+        "jreybert/vimagit",
 
-  -- Editing
-  "tpope/vim-surround",
-  "tpope/vim-repeat",
-  "tpope/vim-unimpaired",
-  "tpope/vim-eunuch",
+        -- Editing
+        "tpope/vim-surround",
+        "tpope/vim-repeat",
+        "tpope/vim-unimpaired",
+        "tpope/vim-eunuch",
 
-  -- Telescope (fuzzy finder)
-  { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+        -- Telescope (fuzzy finder)
+        { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 
-  -- Tmux integration
-  "edkolev/tmuxline.vim",
+        -- Colorscheme
+        { "bluz71/vim-nightfly-colors",    name = "nightfly",                         lazy = false, priority = 1000 },
 })
