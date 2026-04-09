@@ -36,7 +36,7 @@ vim.keymap.set('n', 'zp', ':bp<CR>')
 vim.keymap.set('n', 'z;', ':bd<CR>')
 vim.keymap.set('n', '<leader><leader>', ':nohlsearch<Bar>:echo<CR>', { silent = true })
 vim.keymap.set('n', '[g', ':GitGutterToggle<CR>')
-vim.keymap.set('n', ']g', ':MagitOnly<CR>')
+vim.keymap.set('n', ']g', ':Git<CR>')
 vim.keymap.set('', 'qq', '<Nop>')
 
 -- Trailing whitespace

@@ -14,7 +14,6 @@ require("lazy").setup({
         -- Git
         "tpope/vim-fugitive",
         "airblade/vim-gitgutter",
-        "jreybert/vimagit",
 
         -- Editing
         "tpope/vim-surround",
