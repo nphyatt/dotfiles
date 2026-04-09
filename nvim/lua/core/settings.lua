@@ -39,6 +39,18 @@ vim.keymap.set('n', '[g', ':GitGutterToggle<CR>')
 vim.keymap.set('n', ']g', ':Git<CR>')
 vim.keymap.set('', 'qq', '<Nop>')
 
+-- Zoom toggle (like tmux prefix+z)
+vim.keymap.set('n', '<leader>z', function()
+  if vim.t.zoomed then
+    vim.cmd(vim.t.zoom_restore)
+    vim.t.zoomed = false
+  else
+    vim.t.zoom_restore = vim.fn.winrestcmd()
+    vim.cmd('resize | vertical resize')
+    vim.t.zoomed = true
+  end
+end)
+
 -- Trailing whitespace
 vim.api.nvim_set_hl(0, 'ExtraWhitespace', { bg = 'red', ctermbg = 'red' })
 
