@@ -26,5 +26,8 @@ require("lazy").setup({
         { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 
         -- Colorscheme
-        { "bluz71/vim-nightfly-colors",    name = "nightfly",                         lazy = false, priority = 1000 },
+        { "bluz71/vim-nightfly-colors", name = "nightfly", lazy = false, priority = 1000 },
+
+        -- Discoverability
+        { "folke/which-key.nvim", event = "VeryLazy" },
 })
