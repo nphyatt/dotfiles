@@ -78,3 +78,22 @@ Press `prefix + I` (default prefix is `C-Space`) to install tmux plugins (resurr
 - **Session switching:** `prefix + N/P` (next/prev), `prefix + m` (by name)
 - **Plugins:** tmux-resurrect, tmux-continuum (auto-save/restore sessions), tmux-yank
 - **Reload config:** `prefix + r`
+
+### Claude Code — Linear Workflow Skills
+
+Custom skills that enforce a Linear/GitHub development workflow:
+
+- **`linear-project-planning`** — Idea → Linear project → spec → issue backlog
+- **`linear-issue-implementation`** — Issue pickup → plan → TDD → PR
+
+#### Install into a project
+
+```sh
+~/dotfiles/claude/install-linear-workflow.sh ~/code/my-project
+```
+
+This will:
+1. Symlink the skill files into `<project>/.claude/skills/`
+2. Add a managed workflow section to `<project>/CLAUDE.md`
+
+Re-running the script updates the CLAUDE.md section if the source has changed (skills are symlinks, so they always reflect the latest).
